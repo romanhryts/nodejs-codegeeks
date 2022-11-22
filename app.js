@@ -9,8 +9,8 @@ const PORT = process.env.PORT || 8000;
 const app = express();
 
 // routers and middlewares
-const imageRouter = require('./src/routers/image.router');
-const loggerMiddleware = require('./src/middlewares/logger.middleware');
+const imageRouter = require('./api/routers/image.router');
+const loggerMiddleware = require('./api/middlewares/logger.middleware');
 
 function startServer() {
     try {
